@@ -1,0 +1,87 @@
+{
+  "generated": "2026-03-31",
+  "project": "JPBOP",
+  "source": "public/assets/assets_raw/eagle_export/project 2",
+  "totalAssets": 13,
+  "unusedCount": 0,
+  "assets": [
+    {
+      "original": "TCKR landing hero image.png",
+      "new": "/images/hero/tckr-hero-main.png",
+      "category": "hero",
+      "description": "Futuristic glass atrium corporate lobby with holographic display and employees — landing page hero banner"
+    },
+    {
+      "original": "Neuro-Sync recruitment image.png",
+      "new": "/images/hero/neurosync-recruitment-room.png",
+      "category": "hero",
+      "description": "Woman seated alone in sterile observation room with surveillance cameras — recruitment/evaluation section visual"
+    },
+    {
+      "original": "white bear logo.png",
+      "new": "/images/branding/tckr-mark-icon.png",
+      "category": "branding",
+      "description": "Geometric block mark in black and white — TCKR brand icon/favicon"
+    },
+    {
+      "original": "Facility blueprint.png",
+      "new": "/images/archive/facility-blueprint-main.png",
+      "category": "archive",
+      "description": "Detailed facility systems plan labeled 'Aethel Behavioral Operations Park' with containment suites, audience areas, restoration pods — primary archive blueprint"
+    },
+    {
+      "original": "Internal archive surveillance stills.png",
+      "new": "/images/archive/surveillance-facility-exterior-01.png",
+      "category": "archive",
+      "description": "Overcast exterior of secured facility with surveillance camera, fencing, and figures walking toward entrance — archive surveillance still"
+    },
+    {
+      "original": "Redacted document cover.png",
+      "new": "/images/documents/redacted-incident-report-01.png",
+      "category": "documents",
+      "description": "Top secret redacted operations report with black censor bars, 'CLASSIFIED // DO NOT REMOVE' stamp, and 'ARCHIVED' marking — primary archive document visual"
+    },
+    {
+      "original": "Background.png",
+      "new": "/images/ui/terminal-background-main.png",
+      "category": "ui",
+      "description": "Dark HUD-style background with faint data overlays and amber warning elements — terminal/system interface background"
+    },
+    {
+      "original": "Final profile.png",
+      "new": "/images/ui/candidate-dossier-graphic.png",
+      "category": "ui",
+      "description": "TCKR Systems evaluation portal showing candidate photo, psychometric radar charts, fingerprint scan, 'PROFILE APPROVED' stamp, and role assignment — final profile result screen graphic"
+    },
+    {
+      "original": "portraits/Candidate Support Lead.png",
+      "new": "/images/portraits/candidate-support-lead.png",
+      "category": "portraits",
+      "description": "Professional woman with brown hair, gray blazer, TCKR badge — maps to Dr. Lena Marsh or similar corporate role"
+    },
+    {
+      "original": "portraits/Ethics Compliance Officer.png",
+      "new": "/images/portraits/ethics-compliance-officer.png",
+      "category": "portraits",
+      "description": "Distinguished man with gray hair, green tie, TCKR badge labeled 'Ethics Compliance Officer' — maps to Dr. Aran Osei"
+    },
+    {
+      "original": "portraits/Park Operations Manager.png",
+      "new": "/images/portraits/park-operations-manager.png",
+      "category": "portraits",
+      "description": "Stern woman with short hair, teal blouse, TCKR badge labeled 'Park Operations Manager' — maps to Yuna Park (Remote Warden Operator)"
+    },
+    {
+      "original": "portraits/Archived  Deleted Staff Member-1.png",
+      "new": "/images/portraits/archived-staff-member-01.png",
+      "category": "portraits",
+      "description": "Man with beard, dark hair, light blue shirt, TCKR badge — maps to Marcus Hale or James Whitfield"
+    },
+    {
+      "original": "portraits/Archived  Deleted Staff Member-2.png",
+      "new": "/images/portraits/archived-staff-member-02.png",
+      "category": "portraits",
+      "description": "Glitched/pixelated portrait of a woman with corrupted badge — perfect for redacted employee EMP-0089 (Subject 0089)"
+    }
+  ]
+}

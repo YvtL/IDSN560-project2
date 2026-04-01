@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+
+  ::selection {
+    @apply bg-tckr-200 text-tckr-900;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+  }
+
+  .glass-panel-dark {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg;
+  }
+
+  .section-fade {
+    @apply opacity-0 translate-y-5;
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
+
+  .archive-card {
+    @apply bg-archive-card border border-archive-border rounded-lg p-4
+           transition-all duration-300 hover:border-archive-amber/40 cursor-pointer;
+  }
+
+  .terminal-line {
+    @apply font-mono text-sm leading-relaxed;
+  }
+
+  .redacted {
+    @apply bg-gray-800 text-transparent select-none inline-block px-1 rounded-sm;
+    min-width: 80px;
+  }
+
+  .redacted-amber {
+    @apply bg-archive-amber/20 text-transparent select-none inline-block px-1 rounded-sm;
+    min-width: 80px;
+  }
+
+  .classification-standard {
+    @apply text-archive-green border-archive-green/30;
+  }
+
+  .classification-restricted {
+    @apply text-archive-amber border-archive-amber/30;
+  }
+
+  .classification-sealed {
+    @apply text-archive-red border-archive-red/30;
+  }
+
+  .scanline-overlay {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, 1px); }
+}
+
+@keyframes terminalBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: terminalBlink 1s step-end infinite;
+  @apply text-terminal-accent ml-0.5;
+}
+
+/* Custom scrollbar for archive/terminal */
+.dark-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.dark-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: #2e3338;
+  border-radius: 3px;
+}
+.dark-scroll::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}
